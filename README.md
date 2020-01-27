@@ -32,7 +32,7 @@ User does most of the work on the main page
 
 [//]: # (Client Table)
 
-| Client | 
+| Client | data type |  
 | --- | --- |
 | &#128273; Id | INTEGER |
 | HourlyRate | REAL |
@@ -64,7 +64,7 @@ User does most of the work on the main page
 [//]: # (Payment)
 
 
-| Payment | 
+| Payment | data type |  
 | --- | --- 
 | &#128273; Id | INTEGER |
 | ClientId | INTEGER|
@@ -76,7 +76,7 @@ User does most of the work on the main page
 [//]: # (Work)
 
 
-| Work | 
+| Work | data type | 
 | --- | --- 
 | &#128273; Id | INTEGER |
 | ClientId | INTEGER |
