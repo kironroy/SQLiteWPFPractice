@@ -31,16 +31,16 @@ User does most of the work on the main page
 [//]: # (Client Table)
 
 | Client | 
-| --- | --- 
-| &#128273; Id 
-| HoursRate 
-| Email 
-| PreBill 
-| HasCutOff 
-| CutOff   
-| MinimumFours    
-| BillingIncrement   
-| RoundUpAfterXMinutes    
+| --- | --- |
+| &#128273; Id |
+| HoursRate |
+| Email |
+| PreBill |
+| HasCutOff |
+| CutOff   |
+| MinimumFours  |  
+| BillingIncrement   |
+| RoundUpAfterXMinutes    |
 
 
 
