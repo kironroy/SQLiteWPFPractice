@@ -84,6 +84,16 @@ User does most of the work on the main page
 | DateEntered
 | Paid
 | PaymentId   
+
+
+| Players Table | data type|
+| --- | --- |
+| &#128273; Id | int |
+| FirstName | varchar(50)|
+| LastName | varchar(50) |
+| Height | float |
+| Weight | int |
+| Age    | int  |
  
 
 
