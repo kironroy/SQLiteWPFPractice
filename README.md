@@ -28,34 +28,36 @@ User does most of the work on the main page
 
 #### SQLite tables:
 
+#### SQLite tables:
+
 [//]: # (Client Table)
 
 | Client | 
 | --- | --- |
-| &#128273; Id |
-| HoursRate |
-| Email |
-| PreBill |
-| HasCutOff |
-| CutOff   |
-| MinimumFours  |  
-| BillingIncrement   |
-| RoundUpAfterXMinutes    |
+| &#128273; Id | INTEGER |
+| HourlyRate | REAL |
+| Email | TEXT |
+| PreBill | INTEGER |
+| HasCutOff | INTEGER |
+| CutOff   | INTEGER |
+| MinimumFours  | REAL |  
+| BillingIncrement   | REAL |
+| RoundUpAfterXMinutes    | INTEGER|
 
 
 
 [//]: # (Defaults)
 
 
-| Defaults | 
-| --- | --- 
-| &#128273; Id 
-| HourlyRatel 
-| PreBill  
-| CutOff   
-| MinimumHours    
-| BillingIncrement   
-| RoundUpAfterXMinutes  
+| Defaults | data type | 
+| --- | --- |
+| &#128273; Id | INTEGER |
+| HourlyRatel | REAL |
+| PreBill  | INTEGER |
+| CutOff  | INTEGER | 
+| MinimumHours | REAL |   
+| BillingIncrement  | REAL | 
+| RoundUpAfterXMinutes  | INTEGER|
 
 
 
@@ -64,11 +66,11 @@ User does most of the work on the main page
 
 | Payment | 
 | --- | --- 
-| &#128273; Id 
-| ClientId
-| Hours  
-| Amount   
-| Date   
+| &#128273; Id | INTEGER |
+| ClientId | INTEGER|
+| Hours  | REAL |
+| Amount   | REAL |
+| Date   | REAL |
 
 
 [//]: # (Work)
@@ -76,25 +78,17 @@ User does most of the work on the main page
 
 | Work | 
 | --- | --- 
-| &#128273; Id 
-| ClientId
-| Hours  
-| Title  
-| Description
-| DateEntered
-| Paid
-| PaymentId   
+| &#128273; Id | INTEGER |
+| ClientId | INTEGER |
+| Hours  | REAL |
+| Title  | TEXT |
+| Description | TEXT |
+| DateEntered | REAL |
+| Paid | INTEGER|
+| PaymentId | INTEGER |    
 
 
-| Players Table | data type|
-| --- | --- |
-| &#128273; Id | int |
-| FirstName | varchar(50)|
-| LastName | varchar(50) |
-| Height | float |
-| Weight | int |
-| Age    | int  |
- 
+
 
 
 
