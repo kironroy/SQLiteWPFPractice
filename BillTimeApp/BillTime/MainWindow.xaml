@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BillTime" FontFamily="SF Pro Display"
         mc:Ignorable="d"
-        Title="Bill Time Application" Height="600" Width="350" WindowStartupLocation="CenterScreen">
+        Title="Bill Time Application" Height="650" Width="350" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="87*"/>

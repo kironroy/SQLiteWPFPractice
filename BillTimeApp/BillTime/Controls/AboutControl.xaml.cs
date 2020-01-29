@@ -1,5 +1,4 @@
-﻿using BillTime.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BillTime
+namespace BillTime.Controls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AboutControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AboutControl : UserControl
     {
-        public MainWindow()
+        public AboutControl()
         {
             InitializeComponent();
-            content.Content = new AboutControl();
         }
     }
 }
