@@ -1,7 +1,7 @@
 # SQLiteWPFPractice
 A small practice project on WPF and SQLite
 
-## Would Framework: 
+## W: 
 Small application that will be used to track hours
 spent working for a client.
 The billables related with the hours and the payements
@@ -28,7 +28,6 @@ User does most of the work on the main page
 
 #### SQLite tables:
 
-#### SQLite tables:
 
 [//]: # (Client Table)
 
