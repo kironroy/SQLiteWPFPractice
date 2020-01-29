@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="BillTime.Controls.DefaultsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BillTime.Controls"
+             mc:Ignorable="d" 
+             FontSize="16" 
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="450" d:DesignWidth="300"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Row 0 -->
+        <TextBlock FontSize="20" Margin="5 0 5 0" Padding="5"><Run FontWeight="Bold" Text="Defaults"/></TextBlock>
+
+        <!-- Row 1 -->
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="6 0 5 10">
+            <TextBlock Padding="5">Hourly Rate</TextBlock>
+            <TextBox x:Name="hourlyRateTextbox"/>
+        </StackPanel>
+
+        <!-- Row 2 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="5 5 0 5">
+            <CheckBox x:Name="preBillCheckbox" Padding="5" Margin="4 0 5 0">Pre-bill Client</CheckBox>
+            <CheckBox x:Name="hasCutOffCheckbox" Padding="5">Cut Off Client</CheckBox>
+        </StackPanel>
+
+        <!-- Row 3-->
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5 5 5 10">
+            <StackPanel Orientation="Vertical"  Margin="6 20 8 0">
+                <TextBlock Padding="5">Cut Off Number</TextBlock>
+                <TextBox x:Name="cutoffTextbox"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="1 20 10 0">
+                <TextBlock Padding="5">Minimum Hours</TextBlock>
+                <TextBox x:Name="minimumHoursTextbox"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Row 4-->
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Margin="5 5 5 10">
+            <StackPanel Orientation="Vertical" Margin="6 0 8 0">
+                <TextBlock Padding="5">Billing Increment</TextBlock>
+                <TextBox x:Name="billingIncrementTextbox"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="1 0 10 0">
+                <TextBlock Padding="5">Round Up (min.)</TextBlock>
+                <TextBox x:Name="roundUpAfterXMinuteTextbox"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Row 5 -->
+        <Button x:Name="submitForm" Padding="20 0 " Grid.Row="5" Margin="5 25 5 0">
+            Submit
+        </Button>
+
+    </Grid>
+</UserControl>
+ 
