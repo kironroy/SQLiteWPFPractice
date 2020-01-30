@@ -24,7 +24,7 @@ namespace BillTime
         public MainWindow()
         {
             InitializeComponent();
-            content.Content = new AboutControl();
+            content.Content = new DefaultsControl();
         }
     }
 }

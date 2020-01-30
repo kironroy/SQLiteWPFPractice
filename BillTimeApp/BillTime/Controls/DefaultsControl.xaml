@@ -62,7 +62,7 @@
         </StackPanel>
 
         <!-- Row 5 -->
-        <Button x:Name="submitForm" Padding="20 0 " Grid.Row="5" Margin="5 25 5 0">
+        <Button x:Name="submitForm" Padding="20 0 " Grid.Row="5" Margin="5 25 5 0" Click="submitForm_Click">
             Submit
         </Button>
 
