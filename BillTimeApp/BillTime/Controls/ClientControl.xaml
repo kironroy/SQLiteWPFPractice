@@ -28,66 +28,72 @@
 
         <!-- Row 1 -->
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="5 5 5 5" >
-            <StackPanel Orientation="Vertical" >
+            <StackPanel Orientation="Vertical" x:Name="clientStackPanel" >
                 <TextBlock Padding="5">Client</TextBlock>
                 <ComboBox x:Name="clientDropDown" Width="150" />
             </StackPanel>
-            <Button x:Name="editButton" Padding="8" Margin="25 5 15 0" VerticalAlignment="Bottom">Edit</Button>
-            <Button x:Name="newButton" Padding="8" Margin="0 0 5 0" VerticalAlignment="Bottom">New</Button>
+            <Button x:Name="editButton" Padding="8" Margin="25 5 15 0" VerticalAlignment="Bottom" Click="editButton_Click">Edit</Button>
+            <Button x:Name="newButton" Padding="8" Margin="0 0 5 0" VerticalAlignment="Bottom" Click="newButton_Click">New</Button>
         </StackPanel>
 
         <!-- Row 2 -->
-        <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 0 5 10">
+        <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 0 5 10" x:Name="nameStackPanel">
             <TextBlock Padding="5">Name</TextBlock>
             <TextBox x:Name="nameTextbox"/>
         </StackPanel>
 
         <!-- Row 3 -->
-        <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 0 5 10">
+        <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 0 5 10" x:Name="emailStackPanel">
             <TextBlock Padding="5">Email Address</TextBlock>
             <TextBox x:Name="emailTextbox"/>
         </StackPanel>
 
         <!-- Row 4 -->
-        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 0 5 10">
+        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 0 5 10" x:Name="hourlyRateStackPanel">
             <TextBlock Padding="5">Hourly Rate</TextBlock>
             <TextBox x:Name="hourlyRateTextbox"/>
         </StackPanel>
 
         <!-- Row 5 -->
-        <StackPanel Orientation="Horizontal" Grid.Row="5" Margin="5 5 0 5">
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Margin="5 5 0 5" x:Name="preBillStackPanel">
             <CheckBox x:Name="preBillCheckbox" Padding="5" Margin="6 0 8 0">Pre-bill Client</CheckBox>
             <CheckBox x:Name="hasCutOffCheckbox" Padding="5" Margin="6 0 8 0">Cut Off Client</CheckBox>
         </StackPanel>
 
         <!-- Row 6-->
-        <StackPanel Orientation="Horizontal" Grid.Row="6" Margin="5 5 5 10">
-            <StackPanel Orientation="Vertical" Margin="6 0 8 0">
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Margin="5 5 5 10" x:Name="checkboxesStackPanel">
+            <StackPanel Orientation="Vertical" Margin="5 0 8 0">
                 <TextBlock Padding="5" >Cut Off Number</TextBlock>
-                <TextBox x:Name="cutoffTextbox"/>
+                <TextBox x:Name="cutOffTextbox"/>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="1 0 10 0">
+            <StackPanel Orientation="Vertical" Margin="6 0 10 0">
                 <TextBlock Padding="5">Minimum Hours</TextBlock>
                 <TextBox x:Name="minimumHoursTextbox"/>
             </StackPanel>
         </StackPanel>
 
         <!-- Row 7-->
-        <StackPanel Orientation="Horizontal" Grid.Row="8" Margin="5 5 5 10">
+        <StackPanel Orientation="Horizontal" Grid.Row="7" Margin="5 5 5 10" x:Name="incrementsStackPanel">
             <StackPanel Orientation="Vertical" Margin="6 0 8 0">
                 <TextBlock Padding="5" Margin="6 0 8 0">Billing Increment</TextBlock>
                 <TextBox x:Name="billingIncrementTextbox"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="1 0 10 0">
-                <TextBlock Padding="5" Margin="6 0 8 0">Round Up (min.)</TextBlock>
+                <TextBlock Padding="5" Margin="4 0 8 0">Round Up (min.)</TextBlock>
                 <TextBox x:Name="roundUpAfterXMinuteTextbox"/>
             </StackPanel>
         </StackPanel>
 
         <!-- Row 8 -->
-        <Button x:Name="submitForm" Padding="5 5 5 5" Grid.Row="7" Margin="10">
-            Submit
-        </Button>
+        <StackPanel Orientation="Horizontal" x:Name="buttonStackPanel" 
+                    Grid.Row="8" Margin="10" HorizontalAlignment="Center">
+            <Button x:Name="submitForm"  Click="submitForm_Click" Margin="0 0 5 0" Padding="5 0">
+                Submit
+            </Button>
+            <Button x:Name="clearForm" Click="clearForm_Click" Margin="5 0 0 0" Padding="5 0">
+                Clear
+            </Button>
+        </StackPanel>
 
     </Grid>
 </UserControl>
